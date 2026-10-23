@@ -1,7 +1,11 @@
 h1 {
-    color : #39C5BB;
-    font-size : 32px;
-    font-family : serif;
+    background-color: #39C5BB;
+    color: white;
+    font-size: 32px;
+    font-family: sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 0;
 }
 
 h2 {
