@@ -1,5 +1,12 @@
 h1 {
-    color : #000000;
-    font-size : 24px;
+    color : #39C5BB;
+    font-size : 32px;
     font-family : serif;
+}
+
+h2 {
+    color: #393939;
+    font-size: 24px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 5px;
 }
