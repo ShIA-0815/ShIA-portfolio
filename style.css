@@ -124,3 +124,35 @@ h2 {
 .skill-item i {
     font-size: 48px;
 }
+
+.links-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.links-list li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.links-list li a:hover {
+    background-color: #eef7fc;
+    border-color: #3498db;
+}
+
+.links-list i {
+    font-size: 24px;
+}
