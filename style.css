@@ -237,10 +237,34 @@ h2 {
     object-fit: contain;
 }
 
-.note1 { top: -10px; left: 50%; margin-left: -16px; }
-.note2 { top: 50%; right: -10px; margin-top: -16px; }
-.note3 { bottom: -10px; left: 50%; margin-left: -16px; }
-.note4 { top: 50%; left: -10px; margin-top: -16px; }
+.note1 {
+    height: 45px;
+    width: 45px;
+    top: -10px;
+    left: 50%;
+    margin-left: -16px;
+}
+.note2 {
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    right: -10px;
+    margin-top: -16px;
+}
+.note3 {
+    height: 40px;
+    width: 40px;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -16px;
+}
+.note4 {
+    height: 45px;
+    width: 45px;
+    top: 50%;
+    left: -10px;
+    margin-top: -16px;
+}
 
 @keyframes orbit-spin {
     from { transform: rotate(0deg); }
