@@ -233,55 +233,62 @@ h2 {
 
 .hero-bg-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: 0;
-    font-size: 6.5vw;
+    font-size: clamp(48px, 7.5vw, 110px);
     font-weight: bold;
-    color: rgba(57, 197, 187, 0.14);
+    color: rgba(57, 197, 187, 0.22);
     white-space: nowrap;
     pointer-events: none;
     user-select: none;
     z-index: 0;
+    line-height: 1.1;
+}
+
+.bg-text-top {
+    top: 8%;
+    left: 5%;
+}
+
+.bg-text-bottom {
+    bottom: 8%;
+    right: 5%;
 }
 
 .music-wrapper {
     position: relative;
-    width: 240px;
-    height: 240px;
+    width: 380px;
+    height: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
     z-index: 1;
 }
 
 .staff-circles {
     position: absolute;
-    width: 210px;
-    height: 210px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
-    border: 2px solid #39C5BB;
+    border: 2.5px solid #39C5BB;
     box-shadow:
-        0 0 0 6px #eef7fc,
-        0 0 0 8px #39c5bb,
-        0 0 0 14px #eef7fc,
-        0 0 0 16px #39c5bb,
-        0 0 0 22px #eef7fc,
-        0 0 0 24px #39c5bb,
-        0 0 0 30px #eef7fc,
-        0 0 0 32px #39c5bb;
+        0 0 0 9px #eef7fc,
+        0 0 0 11.5px #39c5bb,
+        0 0 0 20.5px #eef7fc,
+        0 0 0 23px #39c5bb,
+        0 0 0 32px #eef7fc,
+        0 0 0 34.5px #39c5bb,
+        0 0 0 43.5px #eef7fc,
+        0 0 0 46px #39c5bb;
 }
 
 .profile-icon {
-    width: 140px;
-    height: 140px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     z-index: 2;
-    border: 4px solid white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 6px solid white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .notes-orbit {
@@ -289,43 +296,41 @@ h2 {
     width: 100%;
     height: 100%;
     z-index: 3;
-    animation: orbit-spin 15s linear infinite;
+    animation: orbit-spin 18s linear infinite;
 }
 
 .note {
     position: absolute;
-    width: 32px;
-    height: 32px;
     object-fit: contain;
 }
 
 .note1 {
-    height: 45px;
-    width: 45px;
-    top: -22px;
+    height: 80px;
+    width: 80px;
+    top: -40px;
     left: 50%;
-    margin-left: -22px;
+    margin-left: -40px;
 }
 .note2 {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     top: 50%;
-    right: -25px;
-    margin-top: -25px;
+    right: -40px;
+    margin-top: -40px;
 }
 .note3 {
-    height: 40px;
-    width: 40px;
-    bottom: -20px;
+    height: 70px;
+    width: 70px;
+    bottom: -35px;
     left: 50%;
-    margin-left: -20px;
+    margin-left: -35px;
 }
 .note4 {
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
     top: 50%;
-    left: -20px;
-    margin-top: -20px;
+    left: -35px;
+    margin-top: -35px;
 }
 
 @keyframes orbit-spin {
