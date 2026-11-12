@@ -18,12 +18,14 @@ header {
 
     background-image: repeating-linear-gradient(
         to bottom,
-        transparent,
-        transparent 10px,
         rgba(255, 255, 255, 0.4) 10px,
-        rgba(255, 255, 255, 0.4) 12px
+        rgba(255, 255, 255, 0.4) 12px,
+        transparent 2px,
+        transparent 12px
     );
-    background-position: 0 20px;
+    background-size: 100% 48px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header h1 {
