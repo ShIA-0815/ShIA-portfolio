@@ -235,7 +235,6 @@ h2 {
     width: 32px;
     height: 32px;
     object-fit: contain;
-    animation: note-counter-spin 15s linear infinite;
 }
 
 .note1 { top: -10px; left: 50%; margin-left: -16px; }
