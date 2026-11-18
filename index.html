@@ -84,73 +84,83 @@
         </div>
 
         <h2 id="skills">Skills</h2>
-        <div class="skills-wrapper">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <i class="devicon-python-plain colored"></i>
-                        <span>Python</span>
+        <div class="skills-layout">
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-container">
+                        <div class="skill-item active" data-skill="Python" data-desc="基礎的な文法と簡単なアプリ制作などができます。">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" data-skill="C言語" data-desc="一番得意な言語です。基礎文法やポインタの理解をしました。">
+                            <i class="devicon-c-plain colored"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item" data-skill="C++" data-desc="C言語の延長線で勉強しました。あまりうまく使えないです。">
+                            <i class="devicon-cplusplus-plain colored"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript" data-desc="基礎的な文法のみ覚えています。">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-c-plain colored"></i>
-                        <span>C</span>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-container">
+                        <div class="skill-item" data-skill="html" data-desc="基礎的な文法と判読ができます。書きたくないしプログラミング言語だとも思っていません。">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>html</span>
+                        </div>
+                        <div class="skill-item" data-skill="css" data-desc="文法に多少の理解がある程度です。AI様のおかげで書いてます。アイコンの周りの動いてる音符もCSS。">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>css</span>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-cplusplus-plain colored"></i>
-                        <span>C++</span>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend & Database</h3>
+                    <div class="skills-container">
+                        <div class="skill-item" data-skill="Node.js" data-desc="総合課題実習のプロジェクトのときに使用しました。AIのおかげで多少の知識がついてます。">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item" data-skill="PostgreSQL" data-desc="総合課題実習の最初に使用したDBです。相性的には良かったけど結局没になりました。">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item" data-skill="firebase" data-desc="いつなんのために使ったかは覚えてないけど使用した事実があるので一応乗せておきます。">
+                            <i class="devicon-firebase-plain colored"></i>
+                            <span>firebase</span>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <span>JavaScript</span>
+                </div>
+
+                <div class="skill-category">
+                    <h3>DevOps & Hardware</h3>
+                    <div class="skills-container">
+                        <div class="skill-item" data-skill="Ubuntu" data-desc="一年生の時に部活の影響で使用していました。今はもうその部活をやめたので消しました。">
+                            <i class="devicon-ubuntu-plain colored"></i>
+                            <span>Ubuntu</span>
+                        </div>
+                        <div class="skill-item" data-skill="Arduino" data-desc="C言語が得意なのもあるし経験のおかげでマイコン関連のコーディングはとても得意です。">
+                            <i class="devicon-arduino-plain colored"></i>
+                            <span>Arduino</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <i class="devicon-html5-plain colored"></i>
-                        <span>html</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-css3-plain colored"></i>
-                        <span>css</span>
-                    </div>
+            <div class="skill-character-box">
+                <div class="speech-bubble">
+                    <h4 id="skill-detail-title"></h4>
+                    <p id="skill-detail-desc">スキルのアイコンをクリックするとそのスキルの習得具合を表示します！</p>
                 </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Backend & Database</h3>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <i class="devicon-nodejs-plain colored"></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-postgresql-plain colored"></i>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-firebase-plain colored"></i>
-                        <span>firebase</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>DevOps & Hardware</h3>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <i class="devicon-ubuntu-plain colored"></i>
-                        <span>Ubuntu</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-arduino-plain colored"></i>
-                        <span>Arduino</span>
-                    </div>
-                </div>
+                <img src="res/images/miku.png" alt="mikuicon" class="skill-chara-icon">
             </div>
         </div>
 
@@ -166,6 +176,20 @@
     </main>
 
     <script>
+        const skillItems = document.querySelectorAll('.skill-item');
+        const detailTitle = document.getElementById('skill-detail-title');
+        const detailDesc = document.getElementById('skill-detail-desc');
+
+        skillItems.forEach(item => {
+            item.addEventListener('click', () => {
+                skillItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+
+                detailTitle.textContent = item.getAttribute('data-skill');
+                detailDesc.textContent = item.getAttribute('data-desc');
+            });
+        });
+
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }

@@ -153,11 +153,18 @@ h2 {
     border: 1px solid #ddd;
 }
 
+.skills-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
 .skills-wrapper {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-top: 15px;
 }
 
 .skill-category h3 {
@@ -179,10 +186,92 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+    background-color: #eef7fc;
+}
+
+.skill-item.active {
+    background-color: #eef7fc;
+    border-color: #39c5bb;
 }
 
 .skill-item i {
     font-size: 48px;
+}
+
+.skill-character-box {
+    width: 320px;
+    position: sticky;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.speech-bubble {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 3px solid #39c5bb;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    right: 45px;
+    border-width: 18px 14px 0;
+    border-style: solid;
+    border-color: #39c5bb transparent transparent;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    right: 48px;
+    border-width: 14px 11px 0;
+    border-style: solid;
+    border-color: #ffffff transparent transparent;
+}
+
+.speech-bubble h4 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: #39c5bb;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.speech-bubble p {
+    margin: 0 0 12px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    min-height: 72px;
+}
+
+.skill-chara-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #39c5bb;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .links-list {
